@@ -37,15 +37,6 @@ fakeBackend()
 //   measurementId: process.env.REACT_APP_MEASUREMENTID,
 // };
 
-// const firebaseConfig = {
-//   apiKey: "AIzaSyBSy0fBK1YXyG0kdeOp4aScieHkhoCDNnU",
-//   authDomain: "poc-second-gen-cf.firebaseapp.com",
-//   projectId: "poc-second-gen-cf",
-//   storageBucket: "poc-second-gen-cf.appspot.com",
-//   messagingSenderId: "539713807145",
-//   appId: "1:539713807145:web:67b5067ed7c8d4ff73cd38",
-//   measurementId: "G-95JR326HV1"
-// };
 
 // init firebase backend
 // initFirebaseBackend(firebaseConfig);

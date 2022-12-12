@@ -9,13 +9,14 @@ class FirebaseAuthBackend {
     if (firebaseConfig) {
       // Initialize Firebase
       firebase.initializeApp(firebaseConfig);
+
       firebase.auth().onAuthStateChanged(user => {
         if (user) {
           localStorage.setItem("authUser", JSON.stringify(user));
           user.getIdTokenResult().then(token => {
-          localStorage.setItem("userRole", JSON.stringify(token));
+            localStorage.setItem("userRole", JSON.stringify(token));
           }).catch(err => {
-            console.log("Error..",err)
+            console.log("Error..", err)
           })
         } else {
           localStorage.removeItem("authUser");

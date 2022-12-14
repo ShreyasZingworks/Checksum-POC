@@ -169,6 +169,10 @@ import ContactsGrid from "../pages/Contacts/contacts-grid";
 import ContactsList from "../pages/Contacts/ContactList/contacts-list";
 import ContactsProfile from "../pages/Contacts/ContactsProfile/contacts-profile";
 
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+import FileUploadTest from '../pages/TESTONLY/index'
+
 
 const authProtectedRoutes = [
   { path: "/dashboard", component: Dashboard },
@@ -344,6 +348,8 @@ const publicRoutes = [
   { path: "/auth-email-verification-2", component: EmailVerification2 },
   { path: "/auth-two-step-verification", component: TwostepVerification },
   { path: "/auth-two-step-verification-2", component: TwostepVerification2 },
+
+  { path: "/fileUploadtest", component: FileUploadTest}
 ];
 
 export { authProtectedRoutes, publicRoutes };
